@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/remibetin/wai-website-theme
-  revision: 864a7e0cdbdfda20bdd29a2c65e5c72452148d06
+  revision: 31085a7b080c1c020e43b5ea1bd016997cdf542f
   branch: updates
   specs:
     wai-website-theme (1.10)
@@ -8,7 +8,7 @@ GIT
       jekyll-include-cache (~> 0.2.1)
       jekyll-paginate (~> 1.1.0)
       jekyll-redirect-from (~> 0.16.0)
-      jekyll-seo-tag (~> 2.8.0)
+      jekyll-seo-tag (~> 2.7.1)
       jekyll-sitemap (~> 1.4.0)
       logger (~> 1.7.0)
 
@@ -78,7 +78,7 @@ GEM
       rubyzip (>= 1.3.0, < 3.0)
     jekyll-sass-converter (3.0.0)
       sass-embedded (~> 1.54)
-    jekyll-seo-tag (2.8.0)
+    jekyll-seo-tag (2.7.1)
       jekyll (>= 3.8, < 5.0)
     jekyll-sitemap (1.4.0)
       jekyll (>= 3.7, < 5.0)
@@ -151,7 +151,7 @@ CHECKSUMS
   jekyll-redirect-from (0.16.0) sha256=6635cae569ef9b0f90ffb71ec014ba977177fafb44d32a2b0526288d4d9be6db
   jekyll-remote-theme (0.4.3) sha256=d3fde726484fb3df04de9e347baf75aaa3d5bfea771a330412e0c52608e54b40
   jekyll-sass-converter (3.0.0) sha256=e2e7674f186e906b9d99b8066e13f9b4d5cb9f806d36f7bc8cf2610053d8c902
-  jekyll-seo-tag (2.8.0) sha256=3f2ed1916d56f14ebfa38e24acde9b7c946df70cb183af2cb5f0598f21ae6818
+  jekyll-seo-tag (2.7.1) sha256=838bcc05d9f0b342f50a1cea19b8fc99f9728910da99203cd75cccea6139513b
   jekyll-sitemap (1.4.0) sha256=0de08c5debc185ea5a8f980e1025c7cd3f8e0c35c8b6ef592f15c46235cf4218
   jekyll-watch (2.2.1) sha256=bc44ed43f5e0a552836245a54dbff3ea7421ecc2856707e8a1ee203a8387a7e1
   json (2.18.0) sha256=b10506aee4183f5cf49e0efc48073d7b75843ce3782c68dbeb763351c08fd505
