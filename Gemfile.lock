@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/remibetin/wai-website-theme
-  revision: 864a7e0cdbdfda20bdd29a2c65e5c72452148d06
+  revision: 0b772356e903f0a8a32d79953c23ba107ad379fd
   branch: updates
   specs:
     wai-website-theme (1.10)
