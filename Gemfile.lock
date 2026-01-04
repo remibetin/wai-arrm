@@ -1,16 +1,7 @@
 GIT
-  remote: https://github.com/w3c/wai-website-plugin
-  revision: 7cd3702a96d1b6a84c50fdfd3f6ceb62c72c69ae
-  branch: v2026
-  specs:
-    wai-website-plugin (0.3)
-      jekyll (~> 4.4.1)
-      nokogiri (~> 1.19.0)
-
-GIT
-  remote: https://github.com/w3c/wai-website-theme
-  revision: 3317bc4e222c1433600d8b61204c7d0f5b13e7b7
-  branch: main
+  remote: https://github.com/remibetin/wai-website-theme
+  revision: 864a7e0cdbdfda20bdd29a2c65e5c72452148d06
+  branch: updates
   specs:
     wai-website-theme (1.10)
       jekyll (~> 4.4.1)
@@ -20,7 +11,15 @@ GIT
       jekyll-seo-tag (~> 2.8.0)
       jekyll-sitemap (~> 1.4.0)
       logger (~> 1.7.0)
-      wai-website-plugin (~> 0.2)
+
+GIT
+  remote: https://github.com/w3c/wai-website-plugin
+  revision: 7cd3702a96d1b6a84c50fdfd3f6ceb62c72c69ae
+  branch: v2026
+  specs:
+    wai-website-plugin (0.3)
+      jekyll (~> 4.4.1)
+      nokogiri (~> 1.19.0)
 
 GEM
   remote: https://rubygems.org/
@@ -102,7 +101,7 @@ GEM
       racc (~> 1.4)
     pathutil (0.16.2)
       forwardable-extended (~> 2.6)
-    public_suffix (7.0.0)
+    public_suffix (7.0.1)
     racc (1.8.1)
     rake (13.3.1)
     rb-fsevent (0.11.2)
@@ -165,7 +164,7 @@ CHECKSUMS
   nokogiri (1.19.0-arm64-darwin) sha256=0811dfd936d5f6dd3f6d32ef790568bf29b2b7bead9ba68866847b33c9cf5810
   nokogiri (1.19.0-x86_64-linux-gnu) sha256=f482b95c713d60031d48c44ce14562f8d2ce31e3a9e8dd0ccb131e9e5a68b58c
   pathutil (0.16.2) sha256=e43b74365631cab4f6d5e4228f812927efc9cb2c71e62976edcb252ee948d589
-  public_suffix (7.0.0) sha256=f7090b5beb0e56f9f10d79eed4d5fbe551b3b425da65877e075dad47a6a1b095
+  public_suffix (7.0.1) sha256=92098ea5a6272d30d16cb336b20d82fcf6a8781a57b5afa26d0539190b9764b6
   racc (1.8.1) sha256=4a7f6929691dbec8b5209a0b373bc2614882b55fc5d2e447a21aaa691303d62f
   rake (13.3.1) sha256=8c9e89d09f66a26a01264e7e3480ec0607f0c497a861ef16063604b1b08eb19c
   rb-fsevent (0.11.2) sha256=43900b972e7301d6570f64b850a5aa67833ee7d87b458ee92805d56b7318aefe
