@@ -45,7 +45,7 @@ The Accessibility Roles and Responsibilities Mapping (ARRM) helps assign respons
 {:/}
 
 -   TOC is created automatically.
-    {:toc}
+{:toc}
 
 {::nomarkdown}
 {% include_cached toc.html type="end" %}
@@ -74,6 +74,14 @@ Roles that contribute to meeting WCAG requirements for headings:
 {% include_cached box.html type="end" %}
 {:/}
 
+## ARRM and WCAG {#wcag}
+
+ARRM is a practical implementation resource, not a normative interpretation of WCAG.
+
+Its tasks are intended to help teams move closer to WCAG conformance by translating success criteria into actionable activities and highlighting recommended best practices. They do not replace the normative WCAG specification or the informative Understanding WCAG documents, nor should they be interpreted as definitive or exhaustive requirements.
+
+While each task is associated with a relevant success criterion, some associations are stronger than others. In some cases, a task reflects a recommended practice that supports accessibility rather than a direct requirement of the referenced success criterion. When questions arise, WCAG and its supporting documentation remain the authoritative source.
+
 ## Typical roles and responsibilities
 
 ARRM provides one approach for defining roles, tasks, and responsibilities. You can use these as they are, without any work to customize them.
@@ -91,14 +99,6 @@ ARRM provides one approach for defining roles, tasks, and responsibilities. You 
 * [Content Author Responsibilities](/planning/arrm/content-author/)
 * [Front-End Developer Responsibilities](/planning/arrm/front-end/)
 
-### ARRM and WCAG {#wcag}
-
-ARRM is a practical implementation resource, not a normative interpretation of WCAG.
-
-Its tasks are intended to help teams move closer to WCAG conformance by translating success criteria into actionable activities and highlighting recommended best practices. They do not replace the normative WCAG specification or the informative Understanding WCAG documents, nor should they be interpreted as definitive or exhaustive requirements.
-
-While each task is associated with a relevant success criterion, some associations are stronger than others. In some cases, a task reflects a recommended practice that supports accessibility rather than a direct requirement of the referenced success criterion. When questions arise, WCAG and its supporting documentation remain the authoritative source.
-
 ## Customizing ARRM for your situation
 
 Optionally, you can create accessibility roles and responsibilities based on your project and organization.
@@ -107,6 +107,10 @@ Optionally, you can create accessibility roles and responsibilities based on you
 * You can assign responsibilities at the success criteria level or at the task level.
     * If at the task level, you can define different tasks or use the typical [tasks involved in accessibility](/planning/arrm/tasks/).
 * For each success criteria or task, walk through the steps for deciding who is responsible using the **[ARRM Decision Tree](/planning/arrm/decision-tree/)**.
+
+## Who develops ARRM?
+
+@@
 
 ## Accessibility is about people
 
