@@ -387,7 +387,7 @@
       - name: Authoring Tool Submission Form
         url: "/tools-list/authoring/submit-a-tool/"
         hide: true
-  - name: Assigning Roles and Responsibilities
+  - name: Assigning Tasks and Responsibilities
     url: "/planning/arrm/"
     pages:
       - name: Roles
