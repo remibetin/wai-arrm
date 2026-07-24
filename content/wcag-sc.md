@@ -2,8 +2,8 @@
 # Translation instructions are after the "#" character in this first section. They are comments that do not show up in the web page. You do not need to translate the instructions after #.
 # In this first section, do not translate the words before a colon. For example, do not translate "title:". Do translate the text after "title:".
 
-title: "WCAG Success Criteria"
-nav_title: "WCAG Success Criteria"
+title: "WCAG Success Criteria Responsibilities"
+nav_title: "WCAG Success Criteria Responsibilities"
 lang: en                   # Change "en" to the translated-language shortcode
 last_updated: 2026-06-05   # Keep the date of the English version
 
@@ -37,11 +37,6 @@ inline_css: |
   .showhidebutton[data-target=".sidenav"] {
     display: none;
   }
-
-  .task-status {
-    color: var(--dk-grey);
-    font-size: 0.85em;
-  }
   
   @media (min-width: 60em) {
     .showhidebutton[data-target=".sidenav"] {
@@ -59,7 +54,7 @@ inline_css: |
   }
 ---
 
-This page provides an approach for assigning which roles have primary (P), secondary (S), or contributor (C) responsibilities for meeting Web Content Accessibility Guidelines ([WCAG](/standards-guidelines/wcag/)) 2.2 success criteria (SC).
+This page provides an approach for assigning which roles have [primary (P)](/planning/arrm/#primary), [secondary (S)](/planning/arrm/#secondary), or [contributor (C)](/planning/arrm/#contributor) responsibilities for meeting Web Content Accessibility Guidelines ([WCAG](/standards-guidelines/wcag/)) 2.2 success criteria.
 
 You can download the information from the table as a [CSV file]({{ "/content-assets/wai-arrm/arrm-wcag-sc.csv" | relative_url }}).
 
@@ -69,7 +64,7 @@ You can download the information from the table as a [CSV file]({{ "/content-ass
   <thead>
     <tr>
       <!-- Only include specific columns in the header - exclude: Starter List -->
-      <th>WCAG SC</th>
+      <th>WCAG Success Criterion</th>
       <th>Business</th>
       <th>Content Authoring</th>
       <th>Visual Design</th>

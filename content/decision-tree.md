@@ -51,27 +51,6 @@ This tool guides organizations that want to customize their own accessibility ro
 
 The role-based decision tree is a framework to help anyone define a Responsibility Mapping of their own within their organization. It is a process to help teams define and distribute ownership and responsibility of accessibility requirements in the project lifecycle. Using this framework, a team should more easily define who ultimately owns specific requirements and who else is actively involved (those that contribute to the successful implementation of the tasks in the lifecycle).
 
-## Ownership levels
-
-The framework defines three levels of ownership for accessibility requirements, based on commonly agreed upon [RACI (responsible, accountable, consulted, and informed) matrix principles {% include external.html %}](https://en.wikipedia.org/wiki/Responsibility_assignment_matrix#Key_responsibility_roles_(RACI_model)):
-
-1.  **[Primary ownership](#primary-ownership)**  
-    Those who are **accountable** for an accessibility task. Primary owners typically drive the decision-making process, have direct interaction with the secondary owner(s) discussing issues, delegate the work to other roles or team members (as needed), lead the task to completion, have final sign-off authority (if/when used), and are ultimately accountable for the outcome of task or design decisions regardless of when they occur in the process. The last few points emphasize that the primary role is ultimately accountable. This is why there can only be **one primary owner for each task**.
-2.  **[Secondary ownership](#secondary-ownership)**  
-    Those who are **responsible** to help complete an accessibility task. Secondary owners typically directly support the primary owner, are actively involved in the decision-making process, have active interest and participation in the outcomes, may work to complete the task, but ultimately defer final decisions to the primary owner.
-3.  **[Contributors](#contributor)**  
-    Those who need to be **consulted** in order to successfully complete an accessibility task. Contributors are typically not actively involved in the decision-making process, will typically provide initial input or requirements, and may be asked to provide additional information as needed to ensure successful task completion. Contributors may have limited participation by providing initial design input (such as branding guidance or business requirements) with little or no subsequent interaction. In those cases, the communication may be input only with little or no concern of being kept "informed" of the result (relying on the expertise of other owners).
-
-### Ownership to RACI Role Mapping
-
-Ownership role levels are very similar to the RACI responsibility roles. For those familiar with RACI definitions these can be helpful in understanding ownership levels but are not necessary. Accessibility ownership roles to RACI responsibility can be mapped to ownership levels like this:
-
--   Primary -> Accountable
--   Secondary -> Responsible
--   Contributor -> Consulted
-
-Since all accessibility ownership roles provide some input to the design they are “informed.”
-
 ## Step 1. Primary ownership {#primary-ownership}
 
 ### Can this role be involved as a Primary Owner?
