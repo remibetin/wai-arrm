@@ -32,7 +32,7 @@ footer: >
 {% include box.html type="start" h="2" title="Summary" class="full" %}
 {:/}
 
-This set of resources helps you assign tasks and responsibilities for digital accessibility to appropriate roles early in projects. It is also referred as Accessibility Roles and Responsibilities Mapping (ARRM).
+This set of resources helps you assign tasks and responsibilities for digital accessibility to appropriate roles early in projects. It is also called Accessibility Roles and Responsibilities Mapping (ARRM).
 
 {::nomarkdown}
 {% include box.html type="end" %}
