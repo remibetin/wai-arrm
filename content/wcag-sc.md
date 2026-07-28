@@ -54,16 +54,35 @@ inline_css: |
   }
 ---
 
+{::nomarkdown}
+{% include box.html type="start" title="Summary" class="" %}
+{:/}
+
 This page provides an approach for assigning which roles have [primary (P)](/planning/arrm/#primary), [secondary (S)](/planning/arrm/#secondary), or [contributor (C)](/planning/arrm/#contributor) responsibilities for meeting Web Content Accessibility Guidelines ([WCAG](/standards-guidelines/wcag/)) 2.2 success criteria.
 
-You can download the information from the table as a [CSV file]({{ "/content-assets/wai-arrm/arrm-wcag-sc.csv" | relative_url }}).
+{::nomarkdown}
+{% include box.html type="end" %}
+{:/}
+
+{::options toc_levels="2,3" /}
+{::nomarkdown}
+{% include toc.html type="start" title="Page Contents" %}
+{:/}
+
+- This will be replaced by an automatically generated TOC when using Markdown formatting.
+{:toc}
+
+{::nomarkdown}
+{% include toc.html type="end" %}
+{:/}
 
 {% include showhidebutton.html showtext="Show navigation" hidetext="Show tables full width, hide navigation" target=".sidenav" default="show" %}
+
+## Typical roles and responsibility mapping
 
 <table>
   <thead>
     <tr>
-      <!-- Only include specific columns in the header - exclude: Starter List -->
       <th>WCAG Success Criterion</th>
       <th>Business</th>
       <th>Content Authoring</th>
@@ -108,6 +127,17 @@ You can download the information from the table as a [CSV file]({{ "/content-ass
     </tr>
   {% endfor %}
 </tbody>
+</table>
+
+## Alternate format
+
+You can download the information from the table as a [CSV file]({{ "/content-assets/wai-arrm/arrm-wcag-sc.csv" | relative_url }}).
+
+## Customizing roles and responsibilities
+
+This page is based on [typical roles definitions](/planning/arrm/roles/).
+
+Depending on your project and organization, you may want to define different roles or distribute ownership differently. For guidance on defining your own roles and responsibilities mapping, see the [decision tree](/planning/arrm/decision-tree/).
 
 
 

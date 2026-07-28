@@ -2,8 +2,8 @@
 # Translation instructions are after the "#" character in this first section. They are comments that do not show up in the web page. You do not need to translate the instructions after #.
 # In this first section, do not translate the words before a colon. For example, do not translate "title:". Do translate the text after "title:".
 
-title: "Assigning Tasks and Responsibilities to Roles"
-nav_title: "Assigning Tasks and Responsibilities"
+title: "Assigning Tasks and Responsibilities to Roles (ARRM)"
+nav_title: "Assigning Tasks and Responsibilities (ARRM)"
 lang: en                   # Change "en" to the translated-language shortcode
 last_updated: 2026-06-05   # Keep the date of the English version
 
@@ -29,17 +29,16 @@ footer: >
 ---
 
 {::nomarkdown}
-{% include box.html type="start" h="2" title="Summary" class="full" %}
+{% include box.html type="start" title="Summary" class="" %}
 {:/}
 
-This resource helps you assign tasks and responsibilities for digital accessibility to appropriate roles early in projects. It is also called Accessibility Roles and Responsibilities Mapping (ARRM).
+This resource helps you assign tasks and responsibilities for digital accessibility to appropriate roles early in projects. It is also called ARRM (Accessibility Roles and Responsibilities Mapping).
 
 {::nomarkdown}
 {% include box.html type="end" %}
 {:/}
 
 {::options toc_levels="2" /}
-
 {::nomarkdown}
 {% include_cached toc.html type="start" title="Page Contents" class="full" %}
 {:/}
@@ -70,32 +69,35 @@ Different roles contribute to meeting WCAG requirements for headings:
 
 When accessibility is left until late in a project, the responsibility often falls on developers. Then, they may end up handling tasks that are not in their skillset. For example: selecting colors, describing images, and writing headings.
 
-This resource gets your started with assigning responsibilities for accessibility early in projects.
+This resource helps you assign responsibilities for accessibility early in projects.
 
 For more guidance on integrating accessibility throughout projects, see [Planning and Managing Web Accessibility](/planning-and-managing/).
 
-## Typical roles and responsibilities
+## Typical roles, tasks, and responsibilities
 
-You can use the following lists of roles, tasks, and responsibilities as a starting point.
+You can use the following lists of roles, tasks, and assigned responsibilities as a starting point.
 
 **[Roles Involved in Accessibility](/planning/arrm/roles/)**
 : Describes typical roles that have responsibilities for ensuring accessibility.
 
-**[WCAG Success Criteria Responsibilities](/planning/arrm/wcag-sc/)**
-: Provides an approach for assigning which roles have primary, secondary, or contributor responsibilities for meeting each WCAG 2 success criterion.
-
 **[Tasks Involved in Accessibility](/planning/arrm/tasks/)**
-: Lists tasks that you can use to <mark>address WCAG requirements</mark> and their role responsibilities. Subsets of the tasks are provided for the following roles:
+: Highlights which roles are typically responsible for some accessibility tasks. Subsets of the tasks are provided for the following roles:
 * [User Experience (UX) Designer Responsibilities](/planning/arrm/user-experience/)
 * [Visual Designer Responsibilities](/planning/arrm/visual-designer/)
 * [Content Author Responsibilities](/planning/arrm/content-author/)
 * [Front-End Developer Responsibilities](/planning/arrm/front-end/)
 
-## Custom roles and responsibilities
+**[WCAG Success Criteria Responsibilities](/planning/arrm/wcag-sc/)**
+: Provides an approach for assigning which roles have primary, secondary, or contributor responsibilities for meeting each WCAG 2 success criterion.
 
-Depending on your project and organization, you may want to create your own accessibility roles and responsibilities.
+## Customizing this resource for your situation
 
-**[Roles and Responsibilities Decision Tree](/planning/arrm/decision-tree/)**
+Depending on your project and organization, you may want to:
+- define different roles for your project team
+- define different tasks
+- distribute ownership differently
+
+**[Decision Tree](/planning/arrm/decision-tree/)**
 : Walks you through the steps for deciding who is responsible for an accessibility task or for meeting a WCAG success criterion.
 
 ## Ownership levels
@@ -158,12 +160,10 @@ Since all accessibility ownership roles provide some input to the design they ar
 
 ## Relation to WCAG {#wcag}
 
-This resource provides practical implementation guidance. It is not a normative interpretation of WCAG.
+This resource provides practical accessibility guidance. It is not a normative interpretation of WCAG.
 
-While its content can help teams move closer to WCAG conformance, it does not replace the normative WCAG specification or the informative Understanding WCAG documents.
+While the examples it provides can help teams move closer to WCAG conformance, they should not be interpreted as direct requirements. In some cases, the tasks reflect activities that supports accessibility beyond what WCAG requires.
 
 ## More guidance
 
-Assigning accessibility tasks and responsibilities is one aspect of a broader approach. 
-
-To learn more about implementing accessibility throughout your organization and projects, see [Planning and Managing Web Accessibility](/planning-and-managing/).
+Assigning accessibility tasks and responsibilities is one aspect of a broader approach. To learn more about implementing accessibility throughout your organization and projects, see [Planning and Managing Web Accessibility](/planning-and-managing/).

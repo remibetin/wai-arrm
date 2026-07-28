@@ -70,21 +70,13 @@ Content Creation is often used in marketing, but can also be a task assigned to 
   <dd>Content Strategist, Content Creator, Content Designer, Content Author, Digital Copywriter, UX Writer, Content Producer, Technical Writer, Information Developer, and Content Developer</dd>
 </dl>
 
-## Tasks to get started
+## Examples of tasks for content authors
 
-{::nomarkdown}
-{% include box.html type="start" title="Important" icon="warning" %}
-{:/}
+The following accessibility tasks are typically assigned to content authors as [primary owners](/planning/arrm/#primary).
 
-ARRM is a practical implementation resource, not a normative interpretation of WCAG. For important guidance on how to use this resource, <a href="/planning/arrm/tasks/#important">see the disclaimer</a>.
+**Note:** These tasks are illustrative examples. This is not a definitive or complete list of accessibility tasks.
 
-{::nomarkdown}
-{% include box.html type="end" %}
-{:/}
-
-Below is a list of tasks for Content Authors to get started making your work more accessible to disabled people. If these tasks aren't met, your content can create barriers to users with disabilities.
-
-You can also get the full list of [Tasks Involved in Accessibility as a web page](/planning/arrm/tasks/) with other roles, or download the [CSV file]({{ "/content-assets/wai-arrm/arrm-all-tasks.csv" | relative_url }}).
+Each task references a WCAG success criterion it relates to. While these tasks can help teams move closer to WCAG conformance, they should not be interpreted as direct requirements of this success criterion. In some cases, the task reflects an activity that supports accessibility beyond what WCAG requires.
 
 <table>
   <thead>
@@ -166,22 +158,3 @@ This task helps people with visual disabilities, cognitive limitations, and moto
 *   Use the [Alt Text Decision Tree](/tutorials/images/decision-tree/) to help decide if an image needs a description.
 *   Use the [Tips for Writing](/tips/writing/) to get started.
 *   Review the [Images Tutorial](/tutorials/images/) for guidance on different types of images.
-
-## Draft review questions
-
-{::nomarkdown}
-{% include box.html type="start" title="How do you want to use this page?" icon="comments"%}
-{:/}
-
-For the later iterations of this page, we could:
-- Provide the 'Tasks to get started' as separate tables by content type — images and graphs, semantic structure, ... like the full [Tasks page](/planning/arrm/tasks/)
-- Provide all the tasks, in addition to the tasks to get started
-- Provide filters to select what to show
-
-Would that be particulalry useful to you? Or, are you comfortable downloading the [CSV file]({{ "/content-assets/wai-arrm/arrm-all-tasks.csv" | relative_url }}) and using your spreadsheet software to see what you want?
-
-We welcome your input by email or GitHub from the links below [Help improve this page](#helpimprove)
-
-{::nomarkdown}
-{% include_cached box.html type="end" %}
-{:/}

@@ -37,7 +37,7 @@ footer: >
 {% include box.html type="start" h="2" title="Summary" class="full" %}
 {:/}
 
-This page lists some digital accessibility tasks that are usually the responsibility of Visual Designers.
+This page lists some digital accessibility tasks that are usually the responsibility of visual designers.
 
 {::nomarkdown}
 {% include box.html type="end" %}
@@ -58,7 +58,7 @@ This page lists some digital accessibility tasks that are usually the responsibi
 
 ## Role summary
 
-Visual Design focuses largely on the look and feel of an application, as an end user would experience it, visually or otherwise. This includes specifying original design of interface elements and layout, choosing fonts and colors, and more. While UX Design is focused on how something works, Visual Design is focused on how it looks and feels.
+Visual design focuses largely on the look and feel of an application, as an end user would experience it, visually or otherwise. This includes specifying original design of interface elements and layout, choosing fonts and colors, and more. While UX design is focused on how something works, visual design is focused on how it looks and feels.
 
 <dl>
 <dt>Key deliverable examples:</dt>
@@ -69,21 +69,13 @@ Visual Design focuses largely on the look and feel of an application, as an end 
 <dd>Visual Designer, Web Designer, User Interface (UI) Designer, and Graphic Designer</dd>
 </dl>
 
-## Tasks to get started
+## Examples of tasks for visual designers
 
-{::nomarkdown}
-{% include box.html type="start" title="Important" icon="warning" %}
-{:/}
+The following accessibility tasks are typically assigned to visual designers as [primary owners](/planning/arrm/#primary).
 
-ARRM is a practical implementation resource, not a normative interpretation of WCAG. For important guidance on how to use this resource, <a href="/planning/arrm/tasks/#important">see the disclaimer</a>.
+**Note:** These tasks are illustrative examples. This is not a definitive or complete list of accessibility tasks.
 
-{::nomarkdown}
-{% include box.html type="end" %}
-{:/}
-
-Below is a list of tasks for Visual Designers to get started making your work more accessible to disabled people. If these design tasks aren't met, your design can create barriers to users with disabilities.
-
-You can also get the full list of [Tasks Involved in Accessibility as a web page](/planning/arrm/tasks/) with other roles, or download the [CSV file]({{ "/content-assets/wai-arrm/arrm-all-tasks.csv" | relative_url }}).
+Each task references a WCAG success criterion it relates to. While these tasks can help teams move closer to WCAG conformance, they should not be interpreted as direct requirements of this success criterion. In some cases, the task reflects an activity that supports accessibility beyond what WCAG requires.
 
 <table>
   <thead>
@@ -168,22 +160,3 @@ When red and green color combinations are used, Lexie cannot distinguish between
 
 * Use the [Tips for Designing](/tips/designing/) to get started.
 * Use the [Resources for Designers](/roles/designers/).
-
-## Draft review questions
-
-{::nomarkdown}
-{% include box.html type="start" title="How do you want to use this page?" icon="comments"%}
-{:/}
-
-For the later iterations of this page, we could:
-- Provide the 'Tasks to get started' as separate tables by content type — images and graphs, semantic structure, ... like the full [Tasks page](/planning/arrm/tasks/)
-- Provide all the tasks, in addition to the tasks to get started
-- Provide filters to select what to show
-
-Would that be particulalry useful to you? Or, are you comfortable downloading the [CSV file]({{ "/content-assets/wai-arrm/arrm-all-tasks.csv" | relative_url }}) and using your spreadsheet software to see what you want?
-
-We welcome your input by email or GitHub from the links below [Help improve this page](#helpimprove)
-
-{::nomarkdown}
-{% include_cached box.html type="end" %}
-{:/}

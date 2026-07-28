@@ -62,7 +62,7 @@ inline_css: |
 {% include box.html type="start" title="Summary" class="" %}
 {:/}
 
-This page provides an approach to addressing accessibility requirements in WCAG as tasks for specific roles.
+This page provides a list of tasks involved in accessibility. It gives you an idea of which roles are typically responsible for implementing different aspects of accessibility.
 
 {::nomarkdown}
 {% include box.html type="end" %}
@@ -80,40 +80,31 @@ This page provides an approach to addressing accessibility requirements in WCAG 
 {% include toc.html type="end" %}
 {:/}
 
-## Introduction
-
-{::nomarkdown}
-{% include box.html type="start" title="Important" icon="warning" id="important" %}
-{:/}
-
-This is not a definitive or complete list of accessibility tasks. 
-
-ARRM is a practical implementation resource, not a normative interpretation of WCAG. Its tasks are intended to help teams move closer to WCAG conformance by translating success criteria into actionable activities and highlighting recommended best practices. They do not replace the normative WCAG specification or the informative Understanding WCAG documents, nor should they be interpreted as definitive or exhaustive requirements. 
-
-While each task is associated with a relevant success criterion, some associations are stronger than others. In some cases, a task reflects a recommended practice that supports accessibility rather than a direct requirement of the referenced success criterion. When questions arise, WCAG and its supporting documentation remain the authoritative source.
-
-{::nomarkdown}
-{% include box.html type="end" %}
-{:/}
-
-These tasks offer a starting point for a role-based approach to addressing Web Content Accessibility Guidelines ([WCAG](/standards-guidelines/wcag/)) 2.2 success criteria (SC). 
-
-This information is also available to download as a [CSV file]({{ "/content-assets/wai-arrm/arrm-all-tasks.csv" | relative_url }}).
-
 {% include showhidebutton.html showtext="Show navigation" hidetext="Show tables full width, hide navigation" target=".sidenav" default="show" %}
 
-## Images and Graphs
+## Introduction
+
+The following accessibility tasks offer a starting point for assigning responsibilities for digital accessibility to appropriate roles.
+
+For each task, the tables identify which role typically has primary, secondary, and contributor responsibilities. For more information on levels, see [Ownership levels](/planning/arrm/#ownership-levels).
+
+**Note:** These tasks are illustrative examples. This is not a definitive or complete list of accessibility tasks.
+
+Each task references a WCAG success criterion it relates to. While these tasks can help teams move closer to WCAG conformance, they should not be interpreted as direct requirements of this success criterion. In some cases, the task reflects an activity that supports accessibility beyond what WCAG requires.
+
+## Examples of tasks
+
+### Images and Graphs
 
 <table>
   <thead>
     <tr>
-      <!-- Only include specific columns in the header - exclude: Starter List -->
-      <th style="width:13%">ID / Status</th>
-      <th style="width:8%">WCAG SC</th>
-      <th style="width:34%">Task</th>
-      <th style="width:15%">Primary Ownership</th>
-      <th style="width:15%">Secondary Ownership</th>
-      <th style="width:15%">Contributor</th>
+      <th>ID</th>
+      <th>Task</th>
+      <th>Primary Ownership</th>
+      <th>Secondary Ownership</th>
+      <th>Contributor</th>
+      <th>Related WCAG Success Criterion</th>
     </tr>
   </thead>
   <tbody>
@@ -123,7 +114,11 @@ This information is also available to download as a [CSV file]({{ "/content-asse
       {% assign wcag_entry = site.data.wcag22.successcriteria | find: "num", row["WCAG SC"] %}
       {% if content_type contains "IMG-" %}
         <tr>
-          <td style="white-space:nowrap;">{{ row["ID"] }} <br /><span class="notes task-status">{{ row["Status"] }}</span></td>
+          <td style="white-space:nowrap;">{{ row["ID"] }}</td>
+          <td>{{ row["Task"] }}</td>
+          <td>{{ row["Primary Ownership"] }}</td>
+          <td>{{ row["Secondary Ownership"] }}</td>
+          <td>{{ row["Contributor"] }}</td>
           <td>
             {%- if wcag_entry -%}
               <a href="https://www.w3.org/WAI/WCAG22/Understanding/{{ wcag_entry.id }}">
@@ -131,28 +126,24 @@ This information is also available to download as a [CSV file]({{ "/content-asse
             {{ row["WCAG SC"] }} {{ wcag_entry.handle }} ({{ row["Level"] }})
             {%- if wcag_entry -%}</a>{%- endif %}
           </td>
-          <td>{{ row["Task"] }}</td>
-          <td>{{ row["Primary Ownership"] }}</td>
-          <td>{{ row["Secondary Ownership"] }}</td>
-          <td>{{ row["Contributor"] }}</td>
         </tr>
       {% endif %}
     {% endfor %}
   </tbody>
 </table>
 
-## Semantic Structure
+### Semantic Structure
 
 <table>
   <thead>
     <tr>
       <!-- Only include specific columns in the header - exclude: Starter List -->
-      <th style="width:13%">ID / Status</th>
-      <th style="width:8%">WCAG SC</th>
+      <th style="width:8%">ID</th>
       <th style="width:34%">Task</th>
       <th style="width:15%">Primary Ownership</th>
       <th style="width:15%">Secondary Ownership</th>
       <th style="width:15%">Contributor</th>
+      <th style="width:13%">Related WCAG Success Criterion</th>
     </tr>
   </thead>
   <tbody>
@@ -162,7 +153,11 @@ This information is also available to download as a [CSV file]({{ "/content-asse
       {% assign wcag_entry = site.data.wcag22.successcriteria | find: "num", row["WCAG SC"] %}
       {% if content_type contains "SEM-" %}
         <tr>
-          <td style="white-space:nowrap;">{{ row["ID"] }} <br /><span class="notes task-status">{{ row["Status"] }}</span></td>
+          <td style="white-space:nowrap;">{{ row["ID"] }}</td>
+          <td>{{ row["Task"] }}</td>
+          <td>{{ row["Primary Ownership"] }}</td>
+          <td>{{ row["Secondary Ownership"] }}</td>
+          <td>{{ row["Contributor"] }}</td>
           <td>
             {%- if wcag_entry -%}
               <a href="https://www.w3.org/WAI/WCAG22/Understanding/{{ wcag_entry.id }}">
@@ -170,28 +165,24 @@ This information is also available to download as a [CSV file]({{ "/content-asse
             {{ row["WCAG SC"] }} {{ wcag_entry.handle }} ({{ row["Level"] }})
             {%- if wcag_entry -%}</a>{%- endif %}
           </td>
-          <td>{{ row["Task"] }}</td>
-          <td>{{ row["Primary Ownership"] }}</td>
-          <td>{{ row["Secondary Ownership"] }}</td>
-          <td>{{ row["Contributor"] }}</td>
         </tr>
       {% endif %}
     {% endfor %}
   </tbody>
 </table>
 
-## Input Modalities
+### Input Modalities
 
 <table>
   <thead>
     <tr>
       <!-- Only include specific columns in the header - exclude: Starter List -->
-      <th style="width:13%">ID / Status</th>
-      <th style="width:8%">WCAG SC</th>
+      <th style="width:8%">ID</th>
       <th style="width:34%">Task</th>
       <th style="width:15%">Primary Ownership</th>
       <th style="width:15%">Secondary Ownership</th>
       <th style="width:15%">Contributor</th>
+      <th style="width:13%">Related WCAG Success Criterion</th>
     </tr>
   </thead>
   <tbody>
@@ -201,7 +192,11 @@ This information is also available to download as a [CSV file]({{ "/content-asse
       {% assign wcag_entry = site.data.wcag22.successcriteria | find: "num", row["WCAG SC"] %}
       {% if content_type contains "INP-" %}
         <tr>
-          <td style="white-space:nowrap;">{{ row["ID"] }} <br /><span class="notes task-status">{{ row["Status"] }}</span></td>
+          <td style="white-space:nowrap;">{{ row["ID"] }}</td>
+          <td>{{ row["Task"] }}</td>
+          <td>{{ row["Primary Ownership"] }}</td>
+          <td>{{ row["Secondary Ownership"] }}</td>
+          <td>{{ row["Contributor"] }}</td>
           <td>
             {%- if wcag_entry -%}
               <a href="https://www.w3.org/WAI/WCAG22/Understanding/{{ wcag_entry.id }}">
@@ -209,28 +204,24 @@ This information is also available to download as a [CSV file]({{ "/content-asse
             {{ row["WCAG SC"] }} {{ wcag_entry.handle }} ({{ row["Level"] }})
             {%- if wcag_entry -%}</a>{%- endif %}
           </td>
-          <td>{{ row["Task"] }}</td>
-          <td>{{ row["Primary Ownership"] }}</td>
-          <td>{{ row["Secondary Ownership"] }}</td>
-          <td>{{ row["Contributor"] }}</td>
         </tr>
       {% endif %}
     {% endfor %}
   </tbody>
 </table>
 
-## Form Interactions
+### Form Interactions
 
 <table>
   <thead>
     <tr>
       <!-- Only include specific columns in the header - exclude: Starter List -->
-      <th style="width:13%">ID / Status</th>
-      <th style="width:8%">WCAG SC</th>
+      <th style="width:8%">ID</th>
       <th style="width:34%">Task</th>
       <th style="width:15%">Primary Ownership</th>
       <th style="width:15%">Secondary Ownership</th>
       <th style="width:15%">Contributor</th>
+      <th style="width:13%">Related WCAG Success Criterion</th>
     </tr>
   </thead>
   <tbody>
@@ -240,7 +231,11 @@ This information is also available to download as a [CSV file]({{ "/content-asse
       {% assign wcag_entry = site.data.wcag22.successcriteria | find: "num", row["WCAG SC"] %}
       {% if content_type contains "FRM-" %}
         <tr>
-          <td style="white-space:nowrap;">{{ row["ID"] }} <br /><span class="notes task-status">{{ row["Status"] }}</span></td>
+          <td style="white-space:nowrap;">{{ row["ID"] }}</td>
+          <td>{{ row["Task"] }}</td>
+          <td>{{ row["Primary Ownership"] }}</td>
+          <td>{{ row["Secondary Ownership"] }}</td>
+          <td>{{ row["Contributor"] }}</td>
           <td>
             {%- if wcag_entry -%}
               <a href="https://www.w3.org/WAI/WCAG22/Understanding/{{ wcag_entry.id }}">
@@ -248,28 +243,24 @@ This information is also available to download as a [CSV file]({{ "/content-asse
             {{ row["WCAG SC"] }} {{ wcag_entry.handle }} ({{ row["Level"] }})
             {%- if wcag_entry -%}</a>{%- endif %}
           </td>
-          <td>{{ row["Task"] }}</td>
-          <td>{{ row["Primary Ownership"] }}</td>
-          <td>{{ row["Secondary Ownership"] }}</td>
-          <td>{{ row["Contributor"] }}</td>
         </tr>
       {% endif %}
     {% endfor %}
   </tbody>
 </table>
 
-## CSS and Presentation
+### CSS and Presentation
 
 <table>
   <thead>
     <tr>
       <!-- Only include specific columns in the header - exclude: Starter List -->
-      <th style="width:13%">ID / Status</th>
-      <th style="width:8%">WCAG SC</th>
+      <th style="width:8%">ID</th>
       <th style="width:34%">Task</th>
       <th style="width:15%">Primary Ownership</th>
       <th style="width:15%">Secondary Ownership</th>
       <th style="width:15%">Contributor</th>
+      <th style="width:13%">Related WCAG Success Criterion</th>
     </tr>
   </thead>
   <tbody>
@@ -279,7 +270,11 @@ This information is also available to download as a [CSV file]({{ "/content-asse
       {% assign wcag_entry = site.data.wcag22.successcriteria | find: "num", row["WCAG SC"] %}
       {% if content_type contains "CSS-" %}
         <tr>
-          <td style="white-space:nowrap;">{{ row["ID"] }} <br /><span class="notes task-status">{{ row["Status"] }}</span></td>
+          <td style="white-space:nowrap;">{{ row["ID"] }}</td>
+          <td>{{ row["Task"] }}</td>
+          <td>{{ row["Primary Ownership"] }}</td>
+          <td>{{ row["Secondary Ownership"] }}</td>
+          <td>{{ row["Contributor"] }}</td>
           <td>
             {%- if wcag_entry -%}
               <a href="https://www.w3.org/WAI/WCAG22/Understanding/{{ wcag_entry.id }}">
@@ -287,10 +282,6 @@ This information is also available to download as a [CSV file]({{ "/content-asse
             {{ row["WCAG SC"] }} {{ wcag_entry.handle }} ({{ row["Level"] }})
             {%- if wcag_entry -%}</a>{%- endif %}
           </td>
-          <td>{{ row["Task"] }}</td>
-          <td>{{ row["Primary Ownership"] }}</td>
-          <td>{{ row["Secondary Ownership"] }}</td>
-          <td>{{ row["Contributor"] }}</td>
         </tr>
       {% endif %}
     {% endfor %}
@@ -298,18 +289,18 @@ This information is also available to download as a [CSV file]({{ "/content-asse
 </table>
 
 
-## Navigation
+### Navigation
 
 <table>
   <thead>
     <tr>
       <!-- Only include specific columns in the header - exclude: Starter List -->
-      <th style="width:13%">ID / Status</th>
-      <th style="width:8%">WCAG SC</th>
+      <th style="width:8%">ID</th>
       <th style="width:34%">Task</th>
       <th style="width:15%">Primary Ownership</th>
       <th style="width:15%">Secondary Ownership</th>
       <th style="width:15%">Contributor</th>
+      <th style="width:13%">Related WCAG Success Criterion</th>
     </tr>
   </thead>
   <tbody>
@@ -319,7 +310,11 @@ This information is also available to download as a [CSV file]({{ "/content-asse
       {% assign wcag_entry = site.data.wcag22.successcriteria | find: "num", row["WCAG SC"] %}
       {% if content_type contains "NAV-" %}
         <tr>
-          <td style="white-space:nowrap;">{{ row["ID"] }} <br /><span class="notes task-status">{{ row["Status"] }}</span></td>
+          <td style="white-space:nowrap;">{{ row["ID"] }}</td>
+          <td>{{ row["Task"] }}</td>
+          <td>{{ row["Primary Ownership"] }}</td>
+          <td>{{ row["Secondary Ownership"] }}</td>
+          <td>{{ row["Contributor"] }}</td>
           <td>
             {%- if wcag_entry -%}
               <a href="https://www.w3.org/WAI/WCAG22/Understanding/{{ wcag_entry.id }}">
@@ -327,10 +322,6 @@ This information is also available to download as a [CSV file]({{ "/content-asse
             {{ row["WCAG SC"] }} {{ wcag_entry.handle }} ({{ row["Level"] }})
             {%- if wcag_entry -%}</a>{%- endif %}
           </td>
-          <td>{{ row["Task"] }}</td>
-          <td>{{ row["Primary Ownership"] }}</td>
-          <td>{{ row["Secondary Ownership"] }}</td>
-          <td>{{ row["Contributor"] }}</td>
         </tr>
       {% endif %}
     {% endfor %}
@@ -338,18 +329,18 @@ This information is also available to download as a [CSV file]({{ "/content-asse
 </table>
 
 
-## Data Tables
+### Data Tables
 
 <table>
   <thead>
     <tr>
       <!-- Only include specific columns in the header - exclude: Starter List -->
-      <th style="width:13%">ID / Status</th>
-      <th style="width:8%">WCAG SC</th>
+      <th style="width:8%">ID</th>
       <th style="width:34%">Task</th>
       <th style="width:15%">Primary Ownership</th>
       <th style="width:15%">Secondary Ownership</th>
       <th style="width:15%">Contributor</th>
+      <th style="width:13%">Related WCAG Success Criterion</th>
     </tr>
   </thead>
   <tbody>
@@ -359,7 +350,11 @@ This information is also available to download as a [CSV file]({{ "/content-asse
       {% assign wcag_entry = site.data.wcag22.successcriteria | find: "num", row["WCAG SC"] %}
       {% if content_type contains "TAB-" %}
         <tr>
-          <td style="white-space:nowrap;">{{ row["ID"] }} <br /><span class="notes task-status">{{ row["Status"] }}</span></td>
+          <td style="white-space:nowrap;">{{ row["ID"] }}</td>
+          <td>{{ row["Task"] }}</td>
+          <td>{{ row["Primary Ownership"] }}</td>
+          <td>{{ row["Secondary Ownership"] }}</td>
+          <td>{{ row["Contributor"] }}</td>
           <td>
             {%- if wcag_entry -%}
               <a href="https://www.w3.org/WAI/WCAG22/Understanding/{{ wcag_entry.id }}">
@@ -367,10 +362,6 @@ This information is also available to download as a [CSV file]({{ "/content-asse
             {{ row["WCAG SC"] }} {{ wcag_entry.handle }} ({{ row["Level"] }})
             {%- if wcag_entry -%}</a>{%- endif %}
           </td>
-          <td>{{ row["Task"] }}</td>
-          <td>{{ row["Primary Ownership"] }}</td>
-          <td>{{ row["Secondary Ownership"] }}</td>
-          <td>{{ row["Contributor"] }}</td>
         </tr>
       {% endif %}
     {% endfor %}
@@ -378,18 +369,18 @@ This information is also available to download as a [CSV file]({{ "/content-asse
 </table>
 
 
-## Animation and Movement
+### Animation and Movement
 
 <table>
   <thead>
     <tr>
       <!-- Only include specific columns in the header - exclude: Starter List -->
-      <th style="width:13%">ID / Status</th>
-      <th style="width:8%">WCAG SC</th>
+      <th style="width:8%">ID</th>
       <th style="width:34%">Task</th>
       <th style="width:15%">Primary Ownership</th>
       <th style="width:15%">Secondary Ownership</th>
       <th style="width:15%">Contributor</th>
+      <th style="width:13%">Related WCAG Success Criterion</th>
     </tr>
   </thead>
   <tbody>
@@ -399,7 +390,11 @@ This information is also available to download as a [CSV file]({{ "/content-asse
       {% assign wcag_entry = site.data.wcag22.successcriteria | find: "num", row["WCAG SC"] %}
       {% if content_type contains "ANM-" %}
         <tr>
-          <td style="white-space:nowrap;">{{ row["ID"] }} <br /><span class="notes task-status">{{ row["Status"] }}</span></td>
+          <td style="white-space:nowrap;">{{ row["ID"] }}</td>
+          <td>{{ row["Task"] }}</td>
+          <td>{{ row["Primary Ownership"] }}</td>
+          <td>{{ row["Secondary Ownership"] }}</td>
+          <td>{{ row["Contributor"] }}</td>
           <td>
             {%- if wcag_entry -%}
               <a href="https://www.w3.org/WAI/WCAG22/Understanding/{{ wcag_entry.id }}">
@@ -407,10 +402,6 @@ This information is also available to download as a [CSV file]({{ "/content-asse
             {{ row["WCAG SC"] }} {{ wcag_entry.handle }} ({{ row["Level"] }})
             {%- if wcag_entry -%}</a>{%- endif %}
           </td>
-          <td>{{ row["Task"] }}</td>
-          <td>{{ row["Primary Ownership"] }}</td>
-          <td>{{ row["Secondary Ownership"] }}</td>
-          <td>{{ row["Contributor"] }}</td>
         </tr>
       {% endif %}
     {% endfor %}
@@ -418,18 +409,18 @@ This information is also available to download as a [CSV file]({{ "/content-asse
 </table>
 
 
-## Static Content
+### Static Content
 
 <table>
   <thead>
     <tr>
       <!-- Only include specific columns in the header - exclude: Starter List -->
-      <th style="width:13%">ID / Status</th>
-      <th style="width:8%">WCAG SC</th>
+      <th style="width:8%">ID</th>
       <th style="width:34%">Task</th>
       <th style="width:15%">Primary Ownership</th>
       <th style="width:15%">Secondary Ownership</th>
       <th style="width:15%">Contributor</th>
+      <th style="width:13%">Related WCAG Success Criterion</th>
     </tr>
   </thead>
   <tbody>
@@ -439,7 +430,11 @@ This information is also available to download as a [CSV file]({{ "/content-asse
       {% assign wcag_entry = site.data.wcag22.successcriteria | find: "num", row["WCAG SC"] %}
       {% if content_type contains "SCT-" %}
         <tr>
-          <td style="white-space:nowrap;">{{ row["ID"] }} <br /><span class="notes task-status">{{ row["Status"] }}</span></td>
+          <td style="white-space:nowrap;">{{ row["ID"] }}</td>
+          <td>{{ row["Task"] }}</td>
+          <td>{{ row["Primary Ownership"] }}</td>
+          <td>{{ row["Secondary Ownership"] }}</td>
+          <td>{{ row["Contributor"] }}</td>
           <td>
             {%- if wcag_entry -%}
               <a href="https://www.w3.org/WAI/WCAG22/Understanding/{{ wcag_entry.id }}">
@@ -447,29 +442,24 @@ This information is also available to download as a [CSV file]({{ "/content-asse
             {{ row["WCAG SC"] }} {{ wcag_entry.handle }} ({{ row["Level"] }})
             {%- if wcag_entry -%}</a>{%- endif %}
           </td>
-          <td>{{ row["Task"] }}</td>
-          <td>{{ row["Primary Ownership"] }}</td>
-          <td>{{ row["Secondary Ownership"] }}</td>
-          <td>{{ row["Contributor"] }}</td>
         </tr>
       {% endif %}
     {% endfor %}
   </tbody>
 </table>
 
-
-## Dynamic Interactions
+### Dynamic Interactions
 
 <table>
   <thead>
     <tr>
       <!-- Only include specific columns in the header - exclude: Starter List -->
-      <th style="width:13%">ID / Status</th>
-      <th style="width:8%">WCAG SC</th>
+      <th style="width:8%">ID</th>
       <th style="width:34%">Task</th>
       <th style="width:15%">Primary Ownership</th>
       <th style="width:15%">Secondary Ownership</th>
       <th style="width:15%">Contributor</th>
+      <th style="width:13%">Related WCAG Success Criterion</th>
     </tr>
   </thead>
   <tbody>
@@ -479,7 +469,11 @@ This information is also available to download as a [CSV file]({{ "/content-asse
       {% assign wcag_entry = site.data.wcag22.successcriteria | find: "num", row["WCAG SC"] %}
       {% if content_type contains "DYN-" %}
         <tr>
-          <td style="white-space:nowrap;">{{ row["ID"] }} <br /><span class="notes task-status">{{ row["Status"] }}</span></td>
+          <td style="white-space:nowrap;">{{ row["ID"] }}</td>
+          <td>{{ row["Task"] }}</td>
+          <td>{{ row["Primary Ownership"] }}</td>
+          <td>{{ row["Secondary Ownership"] }}</td>
+          <td>{{ row["Contributor"] }}</td>
           <td>
             {%- if wcag_entry -%}
               <a href="https://www.w3.org/WAI/WCAG22/Understanding/{{ wcag_entry.id }}">
@@ -487,12 +481,18 @@ This information is also available to download as a [CSV file]({{ "/content-asse
             {{ row["WCAG SC"] }} {{ wcag_entry.handle }} ({{ row["Level"] }})
             {%- if wcag_entry -%}</a>{%- endif %}
           </td>
-          <td>{{ row["Task"] }}</td>
-          <td>{{ row["Primary Ownership"] }}</td>
-          <td>{{ row["Secondary Ownership"] }}</td>
-          <td>{{ row["Contributor"] }}</td>
         </tr>
       {% endif %}
     {% endfor %}
   </tbody>
 </table>
+
+## Alternate format
+
+This information is also available to download as a [CSV file]({{ "/content-assets/wai-arrm/arrm-all-tasks.csv" | relative_url }}).
+
+## Customizing roles and responsibilities
+
+This page is based on [typical roles definitions](/planning/arrm/roles/).
+
+Depending on your project and organization, you may want to define different roles or distribute ownership differently. For guidance on defining your own roles and responsibilities mapping, see the [decision tree](/planning/arrm/decision-tree/).

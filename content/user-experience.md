@@ -68,29 +68,21 @@ UX Designers can potentially cover numerous related areas, from conceptualizing 
 <dd>User Experience (UX) Designer, Product Designer, Web Designer, and Service Designer</dd>
 </dl>
 
-## Tasks to get started
+## Examples of tasks for UX designers
 
-{::nomarkdown}
-{% include box.html type="start" title="Important" icon="warning" %}
-{:/}
+The following accessibility tasks are typically assigned to UX designers as [primary owners](/planning/arrm/#primary). 
 
-ARRM is a practical implementation resource, not a normative interpretation of WCAG. For important guidance on how to use this resource, <a href="/planning/arrm/tasks/#important">see the disclaimer</a>.
+**Note:** These tasks are illustrative examples. This is not a definitive or complete list of accessibility tasks.
 
-{::nomarkdown}
-{% include box.html type="end" %}
-{:/}
-
-Below is a list of tasks for UX Designers to get started making your work more accessible to disabled people. If these design tasks aren't met, your designs can create barriers to users with disabilities.
-
-You can also get the full list of [Tasks Involved in Accessibility as a web page](/planning/arrm/tasks/) with other roles, or download the [CSV file]({{ "/content-assets/wai-arrm/arrm-all-tasks.csv" | relative_url }}).
+Each task references a WCAG success criterion it relates to. While these tasks can help teams move closer to WCAG conformance, they should not be interpreted as direct requirements of this success criterion. In some cases, the task reflects an activity that supports accessibility beyond what WCAG requires.
 
 <table>
   <thead>
     <tr>
       <!-- Only include specific columns in the header - exclude: Starter List -->
       <th>ID</th>
-      <th>WCAG SC</th>
       <th>Task</th>
+      <th>Related WCAG Success Criterion</th>
     </tr>
   </thead>
   <tbody>
@@ -112,6 +104,8 @@ You can also get the full list of [Tasks Involved in Accessibility as a web page
       {% if primary == "User Experience (UX) Design" %}
         <tr>
           <td style="white-space:nowrap;">{{ row["ID"] }}</td>
+          <td>{{ row["Task"] }}</td>
+          <!-- <td>{{ row["Main Role"] }}</td><td>{{ row["Primary Ownership"] }}</td><td>{{ row["Secondary Ownership"] }}</td><td>{{ row["Contributor"] }}</td> -->
           <td>
             {%- if wcag_entry -%}
               <a href="https://www.w3.org/WAI/WCAG22/Understanding/{{ wcag_entry.id }}">
@@ -119,8 +113,6 @@ You can also get the full list of [Tasks Involved in Accessibility as a web page
             {{ row["WCAG SC"] }} {{ wcag_entry.handle }} ({{ row["Level"] }})
             {%- if wcag_entry -%}</a>{%- endif %}
           </td>
-          <td>{{ row["Task"] }}</td>
-          <!-- <td>{{ row["Main Role"] }}</td><td>{{ row["Primary Ownership"] }}</td><td>{{ row["Secondary Ownership"] }}</td><td>{{ row["Contributor"] }}</td> -->
         </tr>
       {% endif %}
     {% endfor %}
@@ -163,22 +155,3 @@ Read [Lakshmi's full story](/people-use-web/user-stories/story-three/) and learn
 
 * Use the [Tips for Designing](/tips/designing/) to get started
 * See the [WAI Tutorials](/tutorials/) for common web components and how to make them accessible
-
-## Draft review questions
-
-{::nomarkdown}
-{% include box.html type="start" title="How do you want to use this page?" icon="comments"%}
-{:/}
-
-For the later iterations of this page, we could:
-- Provide the 'Tasks to get started' as separate tables by content type — images and graphs, semantic structure, ... like the full [Tasks page](/planning/arrm/tasks/)
-- Provide all the tasks, in addition to the tasks to get started
-- Provide filters to select what to show
-
-Would that be particulalry useful to you? Or, are you comfortable downloading the [CSV file]({{ "/content-assets/wai-arrm/arrm-all-tasks.csv" | relative_url }}) and using your spreadsheet software to see what you want?
-
-We welcome your input by email or GitHub from the links below [Help improve this page](#helpimprove)
-
-{::nomarkdown}
-{% include_cached box.html type="end" %}
-{:/}

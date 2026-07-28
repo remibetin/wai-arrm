@@ -32,7 +32,15 @@ footer: >
    <p>Developed through the <a href="https://www.w3.org/community/arrm/">Accessibility Roles and Responsibilities Mapping (ARRM) Community Group</a> at W3C. Initially developed with the Accessibility Education and Outreach Working Group (<a href="https://www.w3.org/WAI/about/groups/eowg/">EOWG</a>). You are also welcome to join the <a href="https://www.w3.org/community/arrm/">ARRM Community Group</a> to contribute.</p>
 ---
 
+{::nomarkdown}
+{% include box.html type="start" h="2" title="Summary" class="full" %}
+{:/}
 
+This decision tree helps you define which roles are responsible for an accessibility task.
+
+{::nomarkdown}
+{% include box.html type="end" %}
+{:/}
 {::options toc_levels="2" /}
 {::nomarkdown}
 {% include toc.html type="start" title="Page Contents" %}
@@ -47,9 +55,11 @@ footer: >
 
 ## Introduction
 
-This tool guides organizations that want to customize their own accessibility roles and responsibilities mapping, based on considerations in their organizations. For background and context on this decision tree, see [ARRM: Accessibility Roles and Responsibilities Mapping main page](/planning/arrm/).
+This page guides organizations that want to customize their own accessibility roles and responsibilities mapping, based on considerations in their organizations. 
 
-The role-based decision tree is a framework to help anyone define a Responsibility Mapping of their own within their organization. It is a process to help teams define and distribute ownership and responsibility of accessibility requirements in the project lifecycle. Using this framework, a team should more easily define who ultimately owns specific requirements and who else is actively involved (those that contribute to the successful implementation of the tasks in the lifecycle).
+The parent resource also provides [typical examples](/planning/arrm/#typical-roles-and-responsibilities) that you can use as a starting point.
+
+It helps anyone define a responsibility mapping of their own within their organization. It is a process to help teams define and distribute ownership and responsibility of accessibility requirements in the project lifecycle. Using this framework, a team should more easily define who ultimately owns specific requirements and who else is actively involved (those that contribute to the successful implementation of the tasks in the lifecycle).
 
 ## Step 1. Primary ownership {#primary-ownership}
 
