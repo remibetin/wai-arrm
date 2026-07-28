@@ -160,7 +160,7 @@ Since all accessibility ownership roles provide some input to the design they ar
 
 This resource provides practical implementation guidance. It is not a normative interpretation of WCAG.
 
-While their content can help teams move closer to WCAG conformance, they do not replace the normative WCAG specification or the informative Understanding WCAG documents.
+While its content can help teams move closer to WCAG conformance, it does not replace the normative WCAG specification or the informative Understanding WCAG documents.
 
 ## More guidance
 
