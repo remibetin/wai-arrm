@@ -111,7 +111,7 @@ Each task references a WCAG success criterion it relates to. While these tasks c
     {% for row in site.data.arrm.arrm-all-tasks %}
       <!-- Only display rows where 'Starter List' is not null or empty -->
       {% assign content_type = row["ID"] %}
-      {% assign wcag_entry = site.data.wcag22.successcriteria | find: "num", row["WCAG SC"] %}
+      {% assign wcag_entry = site.data.wcag22.successcriteria | find: "num", row["Related WCAG SC"] %}
       {% if content_type contains "IMG-" %}
         <tr>
           <td style="white-space:nowrap;">{{ row["ID"] }}</td>
@@ -123,7 +123,7 @@ Each task references a WCAG success criterion it relates to. While these tasks c
             {%- if wcag_entry -%}
               <a href="https://www.w3.org/WAI/WCAG22/Understanding/{{ wcag_entry.id }}">
             {%- endif -%}
-            {{ row["WCAG SC"] }} {{ wcag_entry.handle }} ({{ row["Level"] }})
+            {{ row["Related WCAG SC"] }} {{ wcag_entry.handle }} ({{ row["Level of related WCAG SC"] }})
             {%- if wcag_entry -%}</a>{%- endif %}
           </td>
         </tr>
@@ -150,7 +150,7 @@ Each task references a WCAG success criterion it relates to. While these tasks c
     {% for row in site.data.arrm.arrm-all-tasks %}
       <!-- Only display rows where 'Starter List' is not null or empty -->
       {% assign content_type = row["ID"] %}
-      {% assign wcag_entry = site.data.wcag22.successcriteria | find: "num", row["WCAG SC"] %}
+      {% assign wcag_entry = site.data.wcag22.successcriteria | find: "num", row["Related WCAG SC"] %}
       {% if content_type contains "SEM-" %}
         <tr>
           <td style="white-space:nowrap;">{{ row["ID"] }}</td>
@@ -162,7 +162,7 @@ Each task references a WCAG success criterion it relates to. While these tasks c
             {%- if wcag_entry -%}
               <a href="https://www.w3.org/WAI/WCAG22/Understanding/{{ wcag_entry.id }}">
             {%- endif -%}
-            {{ row["WCAG SC"] }} {{ wcag_entry.handle }} ({{ row["Level"] }})
+            {{ row["Related WCAG SC"] }} {{ wcag_entry.handle }} ({{ row["Level of related WCAG SC"] }})
             {%- if wcag_entry -%}</a>{%- endif %}
           </td>
         </tr>
@@ -189,7 +189,7 @@ Each task references a WCAG success criterion it relates to. While these tasks c
     {% for row in site.data.arrm.arrm-all-tasks %}
       <!-- Only display rows where 'Starter List' is not null or empty -->
       {% assign content_type = row["ID"] %}
-      {% assign wcag_entry = site.data.wcag22.successcriteria | find: "num", row["WCAG SC"] %}
+      {% assign wcag_entry = site.data.wcag22.successcriteria | find: "num", row["Related WCAG SC"] %}
       {% if content_type contains "INP-" %}
         <tr>
           <td style="white-space:nowrap;">{{ row["ID"] }}</td>
@@ -201,7 +201,7 @@ Each task references a WCAG success criterion it relates to. While these tasks c
             {%- if wcag_entry -%}
               <a href="https://www.w3.org/WAI/WCAG22/Understanding/{{ wcag_entry.id }}">
             {%- endif -%}
-            {{ row["WCAG SC"] }} {{ wcag_entry.handle }} ({{ row["Level"] }})
+            {{ row["Related WCAG SC"] }} {{ wcag_entry.handle }} ({{ row["Level of related WCAG SC"] }})
             {%- if wcag_entry -%}</a>{%- endif %}
           </td>
         </tr>
@@ -228,7 +228,7 @@ Each task references a WCAG success criterion it relates to. While these tasks c
     {% for row in site.data.arrm.arrm-all-tasks %}
       <!-- Only display rows where 'Starter List' is not null or empty -->
       {% assign content_type = row["ID"] %}
-      {% assign wcag_entry = site.data.wcag22.successcriteria | find: "num", row["WCAG SC"] %}
+      {% assign wcag_entry = site.data.wcag22.successcriteria | find: "num", row["Related WCAG SC"] %}
       {% if content_type contains "FRM-" %}
         <tr>
           <td style="white-space:nowrap;">{{ row["ID"] }}</td>
@@ -240,7 +240,7 @@ Each task references a WCAG success criterion it relates to. While these tasks c
             {%- if wcag_entry -%}
               <a href="https://www.w3.org/WAI/WCAG22/Understanding/{{ wcag_entry.id }}">
             {%- endif -%}
-            {{ row["WCAG SC"] }} {{ wcag_entry.handle }} ({{ row["Level"] }})
+            {{ row["Related WCAG SC"] }} {{ wcag_entry.handle }} ({{ row["Level of related WCAG SC"] }})
             {%- if wcag_entry -%}</a>{%- endif %}
           </td>
         </tr>
@@ -267,7 +267,7 @@ Each task references a WCAG success criterion it relates to. While these tasks c
     {% for row in site.data.arrm.arrm-all-tasks %}
       <!-- Only display rows where 'Starter List' is not null or empty -->
       {% assign content_type = row["ID"] %}
-      {% assign wcag_entry = site.data.wcag22.successcriteria | find: "num", row["WCAG SC"] %}
+      {% assign wcag_entry = site.data.wcag22.successcriteria | find: "num", row["Related WCAG SC"] %}
       {% if content_type contains "CSS-" %}
         <tr>
           <td style="white-space:nowrap;">{{ row["ID"] }}</td>
@@ -279,7 +279,7 @@ Each task references a WCAG success criterion it relates to. While these tasks c
             {%- if wcag_entry -%}
               <a href="https://www.w3.org/WAI/WCAG22/Understanding/{{ wcag_entry.id }}">
             {%- endif -%}
-            {{ row["WCAG SC"] }} {{ wcag_entry.handle }} ({{ row["Level"] }})
+            {{ row["Related WCAG SC"] }} {{ wcag_entry.handle }} ({{ row["Level of related WCAG SC"] }})
             {%- if wcag_entry -%}</a>{%- endif %}
           </td>
         </tr>
@@ -307,7 +307,7 @@ Each task references a WCAG success criterion it relates to. While these tasks c
     {% for row in site.data.arrm.arrm-all-tasks %}
       <!-- Only display rows where 'Starter List' is not null or empty -->
       {% assign content_type = row["ID"] %}
-      {% assign wcag_entry = site.data.wcag22.successcriteria | find: "num", row["WCAG SC"] %}
+      {% assign wcag_entry = site.data.wcag22.successcriteria | find: "num", row["Related WCAG SC"] %}
       {% if content_type contains "NAV-" %}
         <tr>
           <td style="white-space:nowrap;">{{ row["ID"] }}</td>
@@ -319,7 +319,7 @@ Each task references a WCAG success criterion it relates to. While these tasks c
             {%- if wcag_entry -%}
               <a href="https://www.w3.org/WAI/WCAG22/Understanding/{{ wcag_entry.id }}">
             {%- endif -%}
-            {{ row["WCAG SC"] }} {{ wcag_entry.handle }} ({{ row["Level"] }})
+            {{ row["Related WCAG SC"] }} {{ wcag_entry.handle }} ({{ row["Level of related WCAG SC"] }})
             {%- if wcag_entry -%}</a>{%- endif %}
           </td>
         </tr>
@@ -347,7 +347,7 @@ Each task references a WCAG success criterion it relates to. While these tasks c
     {% for row in site.data.arrm.arrm-all-tasks %}
       <!-- Only display rows where 'Starter List' is not null or empty -->
       {% assign content_type = row["ID"] %}
-      {% assign wcag_entry = site.data.wcag22.successcriteria | find: "num", row["WCAG SC"] %}
+      {% assign wcag_entry = site.data.wcag22.successcriteria | find: "num", row["Related WCAG SC"] %}
       {% if content_type contains "TAB-" %}
         <tr>
           <td style="white-space:nowrap;">{{ row["ID"] }}</td>
@@ -359,7 +359,7 @@ Each task references a WCAG success criterion it relates to. While these tasks c
             {%- if wcag_entry -%}
               <a href="https://www.w3.org/WAI/WCAG22/Understanding/{{ wcag_entry.id }}">
             {%- endif -%}
-            {{ row["WCAG SC"] }} {{ wcag_entry.handle }} ({{ row["Level"] }})
+            {{ row["Related WCAG SC"] }} {{ wcag_entry.handle }} ({{ row["Level of related WCAG SC"] }})
             {%- if wcag_entry -%}</a>{%- endif %}
           </td>
         </tr>
@@ -387,7 +387,7 @@ Each task references a WCAG success criterion it relates to. While these tasks c
     {% for row in site.data.arrm.arrm-all-tasks %}
       <!-- Only display rows where 'Starter List' is not null or empty -->
       {% assign content_type = row["ID"] %}
-      {% assign wcag_entry = site.data.wcag22.successcriteria | find: "num", row["WCAG SC"] %}
+      {% assign wcag_entry = site.data.wcag22.successcriteria | find: "num", row["Related WCAG SC"] %}
       {% if content_type contains "ANM-" %}
         <tr>
           <td style="white-space:nowrap;">{{ row["ID"] }}</td>
@@ -399,7 +399,7 @@ Each task references a WCAG success criterion it relates to. While these tasks c
             {%- if wcag_entry -%}
               <a href="https://www.w3.org/WAI/WCAG22/Understanding/{{ wcag_entry.id }}">
             {%- endif -%}
-            {{ row["WCAG SC"] }} {{ wcag_entry.handle }} ({{ row["Level"] }})
+            {{ row["Related WCAG SC"] }} {{ wcag_entry.handle }} ({{ row["Level of related WCAG SC"] }})
             {%- if wcag_entry -%}</a>{%- endif %}
           </td>
         </tr>
@@ -427,7 +427,7 @@ Each task references a WCAG success criterion it relates to. While these tasks c
     {% for row in site.data.arrm.arrm-all-tasks %}
       <!-- Only display rows where 'Starter List' is not null or empty -->
       {% assign content_type = row["ID"] %}
-      {% assign wcag_entry = site.data.wcag22.successcriteria | find: "num", row["WCAG SC"] %}
+      {% assign wcag_entry = site.data.wcag22.successcriteria | find: "num", row["Related WCAG SC"] %}
       {% if content_type contains "SCT-" %}
         <tr>
           <td style="white-space:nowrap;">{{ row["ID"] }}</td>
@@ -439,7 +439,7 @@ Each task references a WCAG success criterion it relates to. While these tasks c
             {%- if wcag_entry -%}
               <a href="https://www.w3.org/WAI/WCAG22/Understanding/{{ wcag_entry.id }}">
             {%- endif -%}
-            {{ row["WCAG SC"] }} {{ wcag_entry.handle }} ({{ row["Level"] }})
+            {{ row["Related WCAG SC"] }} {{ wcag_entry.handle }} ({{ row["Level of related WCAG SC"] }})
             {%- if wcag_entry -%}</a>{%- endif %}
           </td>
         </tr>
@@ -466,7 +466,7 @@ Each task references a WCAG success criterion it relates to. While these tasks c
     {% for row in site.data.arrm.arrm-all-tasks %}
       <!-- Only display rows where 'Starter List' is not null or empty -->
       {% assign content_type = row["ID"] %}
-      {% assign wcag_entry = site.data.wcag22.successcriteria | find: "num", row["WCAG SC"] %}
+      {% assign wcag_entry = site.data.wcag22.successcriteria | find: "num", row["Related WCAG SC"] %}
       {% if content_type contains "DYN-" %}
         <tr>
           <td style="white-space:nowrap;">{{ row["ID"] }}</td>
@@ -478,7 +478,7 @@ Each task references a WCAG success criterion it relates to. While these tasks c
             {%- if wcag_entry -%}
               <a href="https://www.w3.org/WAI/WCAG22/Understanding/{{ wcag_entry.id }}">
             {%- endif -%}
-            {{ row["WCAG SC"] }} {{ wcag_entry.handle }} ({{ row["Level"] }})
+            {{ row["Related WCAG SC"] }} {{ wcag_entry.handle }} ({{ row["Level of related WCAG SC"] }})
             {%- if wcag_entry -%}</a>{%- endif %}
           </td>
         </tr>

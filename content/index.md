@@ -102,7 +102,7 @@ Depending on your project and organization, you may want to:
 
 ## Ownership levels
 
-The resource uses three levels of ownership for accessibility requirements, based on commonly agreed upon [RACI (responsible, accountable, consulted, and informed) matrix principles {% include external.html %}](https://en.wikipedia.org/wiki/Responsibility_assignment_matrix#Key_responsibility_roles_(RACI_model)):
+The resource uses three levels of ownership for accessibility tasks, based on commonly agreed upon [RACI (responsible, accountable, consulted, and informed) matrix principles {% include external.html %}](https://en.wikipedia.org/wiki/Responsibility_assignment_matrix#Key_responsibility_roles_(RACI_model)):
 
 **Primary ownership (P)**
 : 

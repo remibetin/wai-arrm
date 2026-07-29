@@ -392,8 +392,6 @@
     pages:
       - name: Roles
         url: "/planning/arrm/roles/"
-      - name: WCAG Success Criteria Responsibilities
-        url: "/planning/arrm/wcag-sc/"
       - name: Tasks Responsibilities
         url: "/planning/arrm/tasks/"
         pages:
@@ -405,6 +403,8 @@
           url: "/planning/arrm/content-author/"
         - name: "Front-End Developer"
           url: "/planning/arrm/front-end/"
+      - name: WCAG Success Criteria Responsibilities
+        url: "/planning/arrm/wcag-sc/"
       - name: Decision Tree
         url: "/planning/arrm/decision-tree/"
       - name: Acknowledgements

@@ -88,7 +88,7 @@ Each task references a WCAG success criterion it relates to. While these tasks c
   <tbody>
     {% for row in site.data.arrm.arrm-all-tasks %}
       {% assign primary = row["Primary Ownership"] %}
-      {% assign wcag_entry = site.data.wcag22.successcriteria | find: "num", row["WCAG SC"] %}
+      {% assign wcag_entry = site.data.wcag22.successcriteria | find: "num", row["Related WCAG SC"] %}
 
       <!-- Only display rows where 'Starter List' is not null or empty -->
       {% assign starter = row["Starter List"] %}
@@ -110,7 +110,7 @@ Each task references a WCAG success criterion it relates to. While these tasks c
             {%- if wcag_entry -%}
               <a href="https://www.w3.org/WAI/WCAG22/Understanding/{{ wcag_entry.id }}">
             {%- endif -%}
-            {{ row["WCAG SC"] }} {{ wcag_entry.handle }} ({{ row["Level"] }})
+            {{ row["Related WCAG SC"] }} {{ wcag_entry.handle }} ({{ row["Level of related WCAG SC"] }})
             {%- if wcag_entry -%}</a>{%- endif %}
           </td>
         </tr>
