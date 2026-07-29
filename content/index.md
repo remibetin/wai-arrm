@@ -2,8 +2,8 @@
 # Translation instructions are after the "#" character in this first section. They are comments that do not show up in the web page. You do not need to translate the instructions after #.
 # In this first section, do not translate the words before a colon. For example, do not translate "title:". Do translate the text after "title:".
 
-title: "Accessibility Roles and Responsibilities Mapping (ARRM)"
-nav_title: "Roles and Responsibilities (ARRM)"
+title: "Assigning Tasks and Responsibilities to Roles (ARRM)"
+nav_title: "Assigning Tasks and Responsibilities (ARRM)"
 lang: en                   # Change "en" to the translated-language shortcode
 last_updated: 2026-06-05   # Keep the date of the English version
 
@@ -24,22 +24,21 @@ custom_changelog: /planning/arrm/changelog/
 # Translate the other words, including "Editors and contributors:"
 # Translate the Community Group and Working Group names. Leave the acronyms in English.
 footer: >
-   <p><strong>Editors and contributors:</strong> See ACKNOWLEDGEMENTS.</p>
-   <p>Developed through the <a href="https://www.w3.org/community/arrm/">Accessibility Roles and Responsibilities Mapping (ARRM) Community Group</a> at W3C. Initially developed with the Accessibility Education and Outreach Working Group (<a href="https://www.w3.org/WAI/about/groups/eowg/">EOWG</a>). You are also welcome to join the <a href="https://www.w3.org/community/arrm/">ARRM Community Group</a> to contribute.</p>
+  <p><strong>Editors and contributors:</strong> See ACKNOWLEDGEMENTS.</p>
+  <p>Developed through the <a href="https://www.w3.org/community/arrm/">Accessibility Roles and Responsibilities Mapping (ARRM) Community Group</a> at W3C. Initially developed with the Accessibility Education and Outreach Working Group (<a href="https://www.w3.org/WAI/about/groups/eowg/">EOWG</a>). You are also welcome to join the <a href="https://www.w3.org/community/arrm/">ARRM Community Group</a> to contribute.</p>
 ---
 
 {::nomarkdown}
-{% include box.html type="start" h="2" title="Summary" class="full" %}
+{% include box.html type="start" title="Summary" class="" %}
 {:/}
 
-ARRM helps you assign responsibilities for digital accessibility to appropriate roles early in projects.
+This resource helps you assign tasks and responsibilities for digital accessibility to appropriate roles early in projects. It is also called ARRM (Accessibility Roles and Responsibilities Mapping).
 
 {::nomarkdown}
 {% include box.html type="end" %}
 {:/}
 
 {::options toc_levels="2" /}
-
 {::nomarkdown}
 {% include_cached toc.html type="start" title="Page Contents" class="full" %}
 {:/}
@@ -51,66 +50,120 @@ ARRM helps you assign responsibilities for digital accessibility to appropriate 
 {% include_cached toc.html type="end" %}
 {:/}
 
+## Introduction
 
-## Background
-
-Different aspects of accessibility are the responsibility of different roles, such as writers, designers, and developers. It is best to clearly define each role's responsibilities early in projects.
-
-When accessibility is left until late in a project, the responsibility often falls on developers. Then they end up handling tasks that are not in their skillset — for example, selecting colors, describing images, and writing headings.
-
-## What is ARRM
-
-Accessibility Roles and Responsibilities Mapping (ARRM) helps your team meet Web Content Accessibility Guidelines ([WCAG](/standards-guidelines/wcag/)). ARRM provides guidance on which roles you can assign responsibilities for accessibility.
+Different aspects of accessibility are the responsibility of different roles, such as content authors, designers, and developers. Defining each role's responsibilities early helps you implement accessibility more effectively.
 
 {::nomarkdown}
 {% include_cached box.html type="start" title="Here is a simplified example" class="simple" %}
 {:/}
 
-Roles that contribute to meeting WCAG requirements for headings:
-* Writers are responsible for writing the heading text and communicating the heading levels.
-* Designers are responsible for defining how the headings look.
-* Developers are responsible for coding or marking up the headings.
+Different roles contribute to meeting WCAG requirements for headings:
+* Content authors are typically responsible for writing the heading text and communicating the heading levels.
+* Designers are typically responsible for defining how the headings look.
+* Developers are typically responsible for coding or marking up the headings.
 
 {::nomarkdown}
 {% include_cached box.html type="end" %}
 {:/}
 
-ARRM includes a table of WCAG requirements — called "success criteria" — and a table of tasks that address the WCAG success criteria. The tables include primary, secondary, and contributor responsibilities. They are explained more in the Decision Tree page, [Ownership levels section](/planning/arrm/decision-tree/#ownership-levels).
-* Primary — accountable for an accessibility task
-* Secondary — responsible to help complete an accessibility task
-* Contributor — should be consulted to successfully complete an accessibility task
+When accessibility is left until late in a project, the responsibility often falls on developers. Then, they may end up handling tasks that are not in their skillset. For example: selecting colors, describing images, and writing headings.
 
-## Typical roles and responsibilities
+This resource helps you assign responsibilities for accessibility early in projects.
 
-ARRM provides one approach for defining roles, tasks, and responsibilities. You can use these as they are, without any work to customize them.
+For more guidance on integrating accessibility throughout projects, see [Planning and Managing Web Accessibility](/planning-and-managing/).
 
-* **[Roles Involved in Accessibility](/planning/arrm/roles/)**
-* **[WCAG Success Criteria](/planning/arrm/wcag-sc/)** shows role responsibilities
-* **[Tasks Involved in Accessibility](/planning/arrm/tasks/)** shows tasks you can use to help meet WCAG and their role responsibilities — subsets of the tasks are listed for these roles:
-  * [User Experience (UX) Designer Responsibilities](/planning/arrm/user-experience/)
-  * [Visual Designer Responsibilities](/planning/arrm/visual-designer/)
-  * [Content Author Responsibilities](/planning/arrm/content-author/)
-  * [Front-End Developer Responsibilities](/planning/arrm/front-end/)
+## Typical roles, tasks, and responsibilities
+
+You can use the following lists of roles, tasks, and assigned responsibilities as a starting point.
+
+**[Roles Involved in Accessibility](/planning/arrm/roles/)**
+: Describes typical roles that have responsibilities for ensuring accessibility.
+
+**[Tasks Involved in Accessibility](/planning/arrm/tasks/)**
+: Highlights which roles are typically responsible for some accessibility tasks. Subsets of the tasks are provided for the following roles:
+* [User Experience (UX) Designer Responsibilities](/planning/arrm/user-experience/)
+* [Visual Designer Responsibilities](/planning/arrm/visual-designer/)
+* [Content Author Responsibilities](/planning/arrm/content-author/)
+* [Front-End Developer Responsibilities](/planning/arrm/front-end/)
+
+**[WCAG Success Criteria Responsibilities](/planning/arrm/wcag-sc/)**
+: Provides an approach for assigning which roles have primary, secondary, or contributor responsibilities for meeting each WCAG 2 success criterion.
+
+## Customizing this resource for your situation
+
+Depending on your project and organization, you may want to:
+- define different roles for your project team
+- define different tasks
+- distribute ownership differently
+
+**[Decision Tree](/planning/arrm/decision-tree/)**
+: Walks you through the steps for deciding who is responsible for an accessibility task or for meeting a WCAG success criterion.
+
+## Ownership levels
+
+The resource uses three levels of ownership for accessibility tasks, based on commonly agreed upon [RACI (responsible, accountable, consulted, and informed) matrix principles {% include external.html %}](https://en.wikipedia.org/wiki/Responsibility_assignment_matrix#Key_responsibility_roles_(RACI_model)):
+
+**Primary ownership (P)**
+: 
+Those who are **accountable** for an accessibility task.
+
+    Typically, primary owners:
+    - drive the decision-making process
+    - have direct interaction with the secondary owner(s) discussing issues
+    - delegate the work to other roles or team members (as needed)
+    - lead the task to completion
+    - have final sign-off authority (if/when used)
+    - are ultimately accountable for the outcome of task or design decisions regardless of when they occur in the process
+    
+    The primary role is ultimately accountable. There can only be **one primary owner for each task**.
+{: #primary}
+
+**Secondary ownership (S)**
+: Those who are **responsible** to help complete an accessibility task.
+
+  Secondary owners typically:
+  - directly support the primary owner
+  - are actively involved in the decision-making process
+  - have active interest and participation in the outcomes
+  - may work to complete the task
+  - ultimately defer final decisions to the primary owner
+{: #secondary}
+
+**Contributors (C)**
+: Those who need to be **consulted** in order to successfully complete an accessibility task.
+
+    Typically, contributors:
+    - are not actively involved in the decision-making process
+    - will provide initial input or requirements
+    - may be asked to provide additional information as needed to ensure successful task completion
+
+    Contributors may have limited participation by providing initial design input (such as branding guidance or business requirements) with little or no subsequent interaction. In those cases, the communication may be input only with little or no concern of being kept "informed" of the result (relying on the expertise of other owners).
+{: #contributor}
+
 
 {::nomarkdown}
-{% include box.html type="start" title="Important" icon="warning" %}
+{% include box.html type="start" title="Ownership to RACI Role Mapping" class="" %}
 {:/}
 
-ARRM is a practical implementation resource, not a normative interpretation of WCAG. For important guidance on how to use this resource, <a href="/planning/arrm/tasks/#important">see the disclaimer</a>.
+Ownership role levels are very similar to the RACI responsibility roles. For those familiar with RACI definitions these can be helpful in understanding ownership levels but are not necessary. Accessibility ownership roles to RACI responsibility can be mapped to ownership levels like this:
+
+-   Primary -> Accountable
+-   Secondary -> Responsible
+-   Contributor -> Consulted
+
+Since all accessibility ownership roles provide some input to the design they are “informed.”
 
 {::nomarkdown}
 {% include box.html type="end" %}
 {:/}
 
-## Customizing ARRM for your situation
+## Relation to WCAG {#wcag}
 
-Optionally, you can create accessibility roles and responsibilities based on your project and organization.
+This resource provides practical accessibility guidance. It is not a normative interpretation of WCAG.
 
-* You can define different roles for your project team or use the typical [role definitions](/planning/arrm/roles/).
-* You can assign responsibilities at the success criteria level or at the task level.
-	* If at the task level, you can define different tasks or use the typical [tasks involved in accessibility](/planning/arrm/tasks/).
-* For each success criteria or task, walk through the steps for deciding who is responsible using the **[ARRM Decision Tree](/planning/arrm/decision-tree/)**.
+While the examples it provides can help teams move closer to WCAG conformance, they should not be interpreted as direct requirements. In some cases, the tasks reflect activities that supports accessibility beyond what WCAG requires.
 
-## Accessibility is about people
+## More guidance
 
-While ARRM focuses on meeting WCAG, it is important to first [understand the people aspects of accessibility](/people/) and to [include people with disabilities in your project](/planning/involving-users/).
+Assigning accessibility tasks and responsibilities is one aspect of a broader approach. To learn more about implementing accessibility throughout your organization and projects, see [Planning and Managing Web Accessibility](/planning-and-managing/).
